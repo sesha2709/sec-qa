@@ -1,0 +1,86 @@
+{
+  "score": 0.5,
+  "n": 10,
+  "results": [
+    {
+      "id": "financebench_id_03029",
+      "question": "What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.",
+      "reference": "$1577.00",
+      "answer": "FY2018 capital expenditures (Purchases of property, plant and equipment) were **$1,577 million**.",
+      "correct": true,
+      "judge": "CORRECT\nThe candidate answer provides the exact same figure of $1,577 million for FY2018 capital expenditures and correctly identifies it as purchases of property, plant and equipment from the cash flow statement."
+    },
+    {
+      "id": "financebench_id_04672",
+      "question": "Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.",
+      "reference": "$8.70",
+      "answer": "Net PP&E for FY2018 was **$8.738 billion** (Property, plant and equipment of $24,873M less accumulated depreciation of $16,135M).",
+      "correct": true,
+      "judge": "CORRECT\nThe candidate answer of $8.738 billion is consistent with the reference answer of $8.70 billion, representing the same calculation with only minor rounding differences."
+    },
+    {
+      "id": "financebench_id_00499",
+      "question": "Is 3M a capital-intensive business based on FY2022 data?",
+      "reference": "No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:\nCAPEX/Revenue Ratio: 5.1%\nFixed assets/Total Assets: 20%\nReturn on Assets= 12.4%",
+      "answer": "I don't have enough information from the provided filing excerpt to determine whether 3M is capital-intensive.\n\nThe excerpt only shows **Net sales** figures for 2022, 2021, and 2020. To assess capital intensity, I would need additional data points such as:\n\n- **Total assets** or **Property, Plant & Equipment (PP&E)**, net\n- **Capital expenditures** (from the cash flow statement)\n- **Depreciation and amortization** expense\n- Ratios like **PP&E-to-Sales**, **Capex-to-Sales**, or **Asset Turnover** (Sales \u00f7 Total Assets)\n\nTypically, a business is considered capital-intensive if it requires significant investment in fixed assets relative to revenue (e.g., high capex-to-sales ratio, low asset turnover, or high PP&E as a percentage of total assets).\n\nIf you can provide the balance sheet (PP&E, total assets) and/or cash flow statement (capital expenditures) figures for FY2022, I can give a more definitive answer.",
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer states they lack sufficient information, while the reference answer provides specific FY2022 metrics (CAPEX/Revenue: 5.1%, Fixed assets/Total Assets: 20%, ROA: 12.4%) that directly answer the question, indicating these figures were available in the filing."
+    },
+    {
+      "id": "financebench_id_01226",
+      "question": "What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "reference": "Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: \n-Decrease in gross Margin\n-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring\ncharges",
+      "answer": "## Drivers of 3M's FY2022 Operating Margin Decline\n\nBased on the filing, 3M's operating margin compressed in FY2022 primarily due to elevated SG&A costs as a percentage of sales, driven by several one-time and strategic items:\n\n1. **Combat Arms Earplugs litigation charge** \u2014 a ~$1.2 billion pre-tax charge in Q2 2022 tied to steps toward resolving this significant litigation matter\n2. **PFAS exit costs** \u2014 impairment charges related to discontinuing PFAS manufacturing\n3. **Russia exit costs** \u2014 charges associated with 3M's withdrawal from the Russian market\n4. **Divestiture-related restructuring charges** \u2014 costs tied to portfolio realignment activities\n5. **Growth investments** \u2014 continued spending on key growth initiatives (a more \"normal\" operating cost, not a special item)\n\nThese pressures were **partially offset** by:\n- Restructuring benefits (cost savings from prior restructuring actions)\n- General cost management/discipline across the organization\n\n**Net effect:** The combination of large, largely non-recurring litigation and exit-related charges outweighed offsetting cost controls, causing SG&A as a % of sales to rise and operating margin to decline year-over-year.\n\n---\n\n### Is Operating Margin a Useful Metric Here?\n\nOperating margin **is still useful** for 3M as a directional indicator, but it requires **adjustment/normalization** to be meaningful for comparative or forward-looking analysis, because:",
+      "correct": false,
+      "judge": "INCORRECT. The candidate answer focuses primarily on SG&A cost increases, while the reference answer explicitly states the decrease was \"primarily due to: -Decrease in gross Margin\" as the main driver, with the one-off charges being additional contributing factors."
+    },
+    {
+      "id": "financebench_id_01865",
+      "question": "If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",
+      "reference": "The consumer segment shrunk by 0.9% organically.",
+      "answer": "Based on the data (excluding M&A impact = Organic sales + Translation), **Consumer** is the segment that dragged down 3M's overall growth in 2022, with a combined organic + translation impact of **-3.5%** ((0.9)% + (2.6)%), the weakest performance among all segments.\n\nFor comparison, the other segments (excluding M&A effects):\n- Safety and Industrial: 1.0% + (4.2)% = -3.2%\n- Transportation and Electronics: 1.2% + (4.6)% = -3.4%\n- Health Care: 3.2% + (3.8)% = -0.6%\n- Consumer: (0.9)% + (2.6)% = **-3.5%** (weakest)\n\nConsumer stands out because it's the only segment with **negative organic sales growth** (-0.9%), while all other segments had positive organic growth. This indicates the Consumer segment's underlying business demand was declining, unlike the others where the sales decline was primarily driven by unfavorable foreign currency translation.",
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer correctly identifies Consumer as the dragging segment but misinterprets the question by adding translation effects (-2.6%), when the question specifically asks to \"exclude the impact of M&A,\" meaning only organic growth should be considered; the reference answer correctly states the organic decline was -0.9%."
+    },
+    {
+      "id": "financebench_id_00807",
+      "question": "Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "reference": "No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",
+      "answer": "**Quick Ratio Calculation (Q2 FY2023 \u2014 June 30, 2023):**\n\nQuick Ratio = (Cash & Equivalents + Marketable Securities + Accounts Receivable) / Total Current Liabilities\n\n= ($4,258 + $56 + $4,947) / $10,936\n= $9,261 / $10,936\n= **~0.85**\n\n**Assessment:**\n\nA quick ratio of ~0.85 is below the commonly cited healthy threshold of 1.0, indicating that 3M's most liquid assets (cash, marketable securities, and receivables) do not fully cover its current liabilities. On a strict quick-ratio basis, this suggests a **somewhat weaker liquidity position**, as the company would need to rely on inventory sales, other current assets, or additional financing/cash flow generation to meet short-term obligations if they came due immediately.\n\n**Caveats/Context:**\n\n- The quick ratio is a conservative, worst-case liquidity measure and may understate 3M's actual liquidity given the company",
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate calculated the quick ratio as 0.85, while the reference answer states it was 0.96 as of June 23 close, representing a significant numerical discrepancy in the key metric."
+    },
+    {
+      "id": "financebench_id_00941",
+      "question": "Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?",
+      "reference": "Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:\n-1.500% Notes due 2026 (Trading Symbol: MMM26)\n-1.750% Notes due 2030 (Trading Symbol: MMM30)\n-1.500% Notes due 2031 (Trading Symbol: MMM31)",
+      "answer": "Based on the filing information provided, the debt securities registered under 3M's name are:\n\n1. **1.500% Notes due 2026** (Trading Symbol: MMM26) - New York Stock Exchange\n2. **1.750% Notes due 2030** (Trading Symbol: MMM30) - New York Stock Exchange\n3. **1.500% Notes due 2031** (Trading Symbol: MMM31) - New York Stock Exchange\n\nAll three note series are listed exclusively on the New York Stock Exchange.",
+      "correct": true,
+      "judge": "CORRECT\nThe candidate answer lists all three identical debt securities with the same terms, due dates, trading symbols, and exchange as the reference answer."
+    },
+    {
+      "id": "financebench_id_01858",
+      "question": "Does 3M maintain a stable trend of dividend distribution?",
+      "reference": "Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years",
+      "answer": "Yes. 3M's 65 consecutive years of dividend increases indicates a long-standing, stable, and reliable trend of dividend distribution, marking it as a \"Dividend King.\"",
+      "correct": true,
+      "judge": "CORRECT\n\nBoth answers confirm that 3M has maintained a stable dividend distribution trend with 65 consecutive years of dividend increases, which are the key facts in the reference answer."
+    },
+    {
+      "id": "financebench_id_02987",
+      "question": "What is the FY2019 fixed asset turnover ratio for Activision Blizzard? Fixed asset turnover ratio is defined as: FY2019 revenue / (average PP&E between FY2018 and FY2019). Round your answer to two decimal places. Base your judgments on the information provided primarily in the statement of income and the statement of financial position.",
+      "reference": "24.26",
+      "answer": "**Fixed Asset Turnover Ratio \u2248 24.26x**\n\nCalculation:\n- FY2019 Revenue: $6,489 million (from Activision Blizzard's FY2019 income statement)\n- Average PP&E = ($253M + $282M) / 2 = $267.5 million\n- Fixed Asset Turnover = $6,489M / $267.5M = **24.26**\n\nNote: The revenue figure was not included in the balance sheet excerpt provided, so I used Activision Blizzard's reported FY2019 net revenue from their income statement to complete this calculation.",
+      "correct": true,
+      "judge": "CORRECT. The candidate answer uses the same revenue figure ($6,489M), the same PP&E values ($253M and $282M), calculates the same average PP&E ($267.5M), and arrives at the same final ratio (24.26), demonstrating consistent methodology and results."
+    },
+    {
+      "id": "financebench_id_07966",
+      "question": "What is the FY2017 - FY2019 3 year average of capex as a % of revenue for Activision Blizzard? Answer in units of percents and round to one decimal place. Calculate (or extract) the answer from the statement of income and the cash flow statement.",
+      "reference": "1.9%",
+      "answer": "I don't have sufficient information to answer this question. The provided filing excerpt is only the Consolidated Statements of Operations, which does not include capital expenditures (capex) data. Capex figures are typically found in the Consolidated Statements of Cash Flows (usually under \"purchases of property and equipment\" in the investing activities section), which was not provided.\n\nTo calculate this ratio, I would need the capex figures for FY2017, FY2018, and FY2019 from the cash flow statement.",
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer claims insufficient information was provided, but the reference answer of 1.9% indicates the necessary data was available in the documents to calculate the metric."
+    }
+  ]
+}
