@@ -1,2 +1,5 @@
-data_src/
 .env
+.venv/
+__pycache__/
+data/
+data_src/extract_cache/

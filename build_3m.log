@@ -1,0 +1,84 @@
+Extracting 3M_2015_10K.pdf ...
+  -> 779 chunks
+Extracting 3M_2016_10K.pdf ...
+  -> 927 chunks
+Extracting 3M_2017_10K.pdf ...
+  -> 806 chunks
+Extracting 3M_2018_10K.pdf ...
+  -> 794 chunks
+Extracting 3M_2019_10K.pdf ...
+  -> 919 chunks
+Extracting 3M_2020_10K.pdf ...
+  -> 845 chunks
+Extracting 3M_2021_10K.pdf ...
+  -> 846 chunks
+Extracting 3M_2022_10K.pdf ...
+  -> 1259 chunks
+Extracting 3M_2023Q2_10Q.pdf ...
+  -> 493 chunks
+
+Total chunks: 7668
+Embedding (this calls the Voyage API in batches)...
+  embedded 128/7668
+  embedded 256/7668
+  embedded 384/7668
+  embedded 512/7668
+  embedded 640/7668
+  embedded 768/7668
+  embedded 896/7668
+  embedded 1024/7668
+  embedded 1152/7668
+  embedded 1280/7668
+  embedded 1408/7668
+  embedded 1536/7668
+  embedded 1664/7668
+  embedded 1792/7668
+  embedded 1920/7668
+  embedded 2048/7668
+  embedded 2176/7668
+  embedded 2304/7668
+  embedded 2432/7668
+  embedded 2560/7668
+  embedded 2688/7668
+  embedded 2816/7668
+  embedded 2944/7668
+  embedded 3072/7668
+  embedded 3200/7668
+  embedded 3328/7668
+  embedded 3456/7668
+  embedded 3584/7668
+  embedded 3712/7668
+  embedded 3840/7668
+  embedded 3968/7668
+  embedded 4096/7668
+  embedded 4224/7668
+  embedded 4352/7668
+  embedded 4480/7668
+  embedded 4608/7668
+  embedded 4736/7668
+  embedded 4864/7668
+  embedded 4992/7668
+  embedded 5120/7668
+  embedded 5248/7668
+  embedded 5376/7668
+  embedded 5504/7668
+  embedded 5632/7668
+  embedded 5760/7668
+  embedded 5888/7668
+  embedded 6016/7668
+  embedded 6144/7668
+  embedded 6272/7668
+  embedded 6400/7668
+  embedded 6528/7668
+  embedded 6656/7668
+  embedded 6784/7668
+  embedded 6912/7668
+  embedded 7040/7668
+  embedded 7168/7668
+  embedded 7296/7668
+  embedded 7424/7668
+  embedded 7552/7668
+  embedded 7668/7668
+
+Saved 7668 chunks to index/chunks.json
+Saved embeddings (7668, 1024) to index/embeddings.npy

@@ -1,0 +1,207 @@
+{
+  "score": 0.1,
+  "n": 10,
+  "top_k": 4,
+  "results": [
+    {
+      "id": "financebench_id_03029",
+      "question": "What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.",
+      "reference": "$1577.00",
+      "answer": "The provided filing excerpts do not contain the actual FY2018 capital expenditure figure from the cash flow statement. They only include the *expected* 2019 capital spending guidance ($1.7\u2013$1.9 billion) and FY2017 net cash used in investing activities and 2018 guidance figures, but not the actual capital expenditures line item for FY2018 as reported in the Consolidated Statement of Cash Flows.",
+      "retrieved_docs": [
+        "3M_2018_10K",
+        "3M_2018_10K",
+        "3M_2017_10K",
+        "3M_2018_10K"
+      ],
+      "retrieval_scores": [
+        0.54,
+        0.535,
+        0.529,
+        0.519
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe reference answer provides a specific FY2018 capital expenditure figure of $1,577.00 million, while the candidate answer claims this information is not available in the provided documents."
+    },
+    {
+      "id": "financebench_id_04672",
+      "question": "Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.",
+      "reference": "$8.70",
+      "answer": "Based on the balance sheet excerpt from the 3M_2018_10K filing, the year-end FY2018 net PP&E (Property, Plant and Equipment \u2014 net) for 3M is **$8.738 billion**.",
+      "retrieved_docs": [
+        "3M_2018_10K",
+        "3M_2019_10K",
+        "3M_2018_10K",
+        "3M_2018_10K"
+      ],
+      "retrieval_scores": [
+        0.526,
+        0.518,
+        0.514,
+        0.507
+      ],
+      "correct": false,
+      "judge": "INCORRECT\nThe candidate answer of $8.738 billion rounds to $8.74 billion, which differs from the reference answer of $8.70 billion by $0.04 billion (a meaningful difference for financial analysis)."
+    },
+    {
+      "id": "financebench_id_00499",
+      "question": "Is 3M a capital-intensive business based on FY2022 data?",
+      "reference": "No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:\nCAPEX/Revenue Ratio: 5.1%\nFixed assets/Total Assets: 20%\nReturn on Assets= 12.4%",
+      "answer": "Based on the provided excerpts, there is **not enough specific FY2022 capital spending data** (e.g., dollar amounts, percentage of revenue, or PP&E figures) to definitively assess capital intensity for FY2022.\n\nThe 2022 10-K excerpt only mentions that capital spending is discussed elsewhere in the MD&A section (\"Cash Flows from Investing Activities\") but does not provide the actual figures in the excerpt given. The only quantitative guidance available is from the **2023 Q2 10-Q**, which states that 3M expected **2023** capital spending to be approximately **$1.5 billion to $1.8 billion** \u2014 this is forward-looking guidance for 2023, not actual FY2022 data.\n\n**Conclusion:** The filing excerpts do not contain sufficient information (such as FY2022 actual capital expenditures, PP&E balances, or capex-to-revenue ratios) to answer whether 3M was capital-intensive based on FY2022 data specifically.",
+      "retrieved_docs": [
+        "3M_2022_10K",
+        "3M_2017_10K",
+        "3M_2018_10K",
+        "3M_2023Q2_10Q"
+      ],
+      "retrieval_scores": [
+        0.571,
+        0.498,
+        0.496,
+        0.489
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer claims there is insufficient FY2022 data to assess capital intensity, but the reference answer provides specific FY2022 metrics (CAPEX/Revenue of 5.1%, Fixed Assets/Total Assets of 20%, and ROA of 12.4%) that directly answer the question, demonstrating these figures were available and should have been cited."
+    },
+    {
+      "id": "financebench_id_01226",
+      "question": "What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "reference": "Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: \n-Decrease in gross Margin\n-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring\ncharges",
+      "answer": "Based on the provided excerpts, the specific drivers of 3M's operating margin change for **FY2022** are not disclosed. The filings excerpts include:\n\n- **FY2021 10-K**: Details operating margin decline (1.5 percentage points, or 0.5 points excluding special items) for **2021 vs. 2020**, citing COVID-19 implications, sales declines in businesses like oral care, automotive/aerospace, and commercial solutions, offset partially by strength in biopharma filtration, abrasives, and industrial adhesives/tapes.\n- **FY2022 10-K**: Only notes a change in segment operating performance measurement methodology effective Q1 2022, but does not provide the actual FY2022 operating margin figures or the factors driving the change.\n- **2023 Q2 10-Q**: Discusses a 2023 non-GAAP measure change (expanding PFAS-related adjustments) but this pertains to 2023 reporting practices, not FY2022 margin drivers.\n\n**Conclusion:** The excerpts do not contain sufficient information to explain what drove 3M's operating margin change specifically for FY2022. To answer this question accurately, additional excerpts from the FY2022 10-K's MD&A section (specifically the \"Performance by Business Segment\" or margin analysis portions) would be needed, as these would typically detail cost pressures (e.g., raw materials, litigation charges, restructuring), segment-level performance, and special items impacting that year's margins.",
+      "retrieved_docs": [
+        "3M_2023Q2_10Q",
+        "3M_2022_10K",
+        "3M_2021_10K",
+        "3M_2023Q2_10Q"
+      ],
+      "retrieval_scores": [
+        0.551,
+        0.548,
+        0.509,
+        0.502
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe reference answer provides specific drivers of the FY2022 operating margin decline (1.7% decrease due to gross margin decline and one-off charges including litigation and restructuring), while the candidate answer claims this information is not disclosed in the provided excerpts, which contradicts the reference answer's findings."
+    },
+    {
+      "id": "financebench_id_01865",
+      "question": "If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",
+      "reference": "The consumer segment shrunk by 0.9% organically.",
+      "answer": "The filing excerpts provided do not contain the answer to this specific question.",
+      "retrieved_docs": [
+        "3M_2023Q2_10Q",
+        "3M_2023Q2_10Q",
+        "3M_2022_10K",
+        "3M_2021_10K"
+      ],
+      "retrieval_scores": [
+        0.586,
+        0.546,
+        0.542,
+        0.539
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer claims the information is not available in the provided excerpts, while the reference answer provides a specific factual answer (the consumer segment shrank 0.9% organically), indicating the data was present in the materials."
+    },
+    {
+      "id": "financebench_id_00807",
+      "question": "Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "reference": "No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",
+      "answer": "The provided filing excerpts do not contain the balance sheet data (cash, marketable securities, accounts receivable, and current liabilities) needed to calculate 3M's quick ratio for Q2 FY2023.\n\nHowever, based on the qualitative information available in the excerpts, 3M describes maintaining a \"strong liquidity profile,\" with its primary short-term liquidity needs met through cash on hand and access to the U.S. commercial paper market. As of June 30, 2023, the company had $1.8 billion in commercial paper outstanding, and it states it believes it will have continuous access to this market, with a program capacity of up to $5 billion. This suggests 3M has multiple liquidity levers beyond just liquid assets on its balance sheet.\n\nThat said, without the specific quick ratio components (cash + marketable securities + accounts receivable, divided by current liabilities), I cannot calculate or confirm the exact quick ratio for Q2 FY2023 to definitively assess liquidity health using that specific metric. If you can provide the balance sheet figures from the 10-Q, I can calculate the quick ratio directly.",
+      "retrieved_docs": [
+        "3M_2023Q2_10Q",
+        "3M_2015_10K",
+        "3M_2021_10K",
+        "3M_2022_10K"
+      ],
+      "retrieval_scores": [
+        0.465,
+        0.464,
+        0.462,
+        0.445
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe reference answer provides a specific quick ratio of 0.96 for Q2 FY2023, which the candidate answer claims cannot be calculated from the provided excerpts, creating a direct factual contradiction."
+    },
+    {
+      "id": "financebench_id_00941",
+      "question": "Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?",
+      "reference": "Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:\n-1.500% Notes due 2026 (Trading Symbol: MMM26)\n-1.750% Notes due 2030 (Trading Symbol: MMM30)\n-1.500% Notes due 2031 (Trading Symbol: MMM31)",
+      "answer": "Based on the 3M_2023Q2_10Q filing excerpt provided, the document does not explicitly list the debt securities registered under Section 12(b) for that period \u2014 it is cut off after listing \"Common Stock, Par Value $.01 Per Share.\"\n\nHowever, based on the most recent prior filing (3M_2022_10K, for fiscal year ended December 31, 2022), the debt securities registered to trade on a national securities exchange (NYSE) were:\n\n- **0.950% Notes due 2023** (Trading Symbol: MMM23)\n- **1.500% Notes due 2026** (Trading Symbol: MMM26)\n- **1.750% Notes due 2030** (Trading Symbol: MMM30)\n\nNote: The 0.950% Notes due 2023 would have matured during 2023, so it's possible this note was no longer outstanding/listed by Q2 2023. However, since the Q2 2023 10-Q excerpt itself does not provide the complete list of registered debt securities, I cannot confirm with certainty from the given text which specific notes remained listed as of that date.",
+      "retrieved_docs": [
+        "3M_2023Q2_10Q",
+        "3M_2022_10K",
+        "3M_2018_10K",
+        "3M_2019_10K"
+      ],
+      "retrieval_scores": [
+        0.591,
+        0.581,
+        0.577,
+        0.57
+      ],
+      "correct": false,
+      "judge": "INCORRECT. The candidate answer omits the 1.500% Notes due 2031 (Trading Symbol: MMM31), which is listed in the reference answer as a debt security registered to trade on the NYSE as of Q2 2023."
+    },
+    {
+      "id": "financebench_id_01858",
+      "question": "Does 3M maintain a stable trend of dividend distribution?",
+      "reference": "Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years",
+      "answer": "Yes. Based on the filing excerpts, 3M has demonstrated a consistently stable and growing dividend distribution trend:\n\n- **Long history**: 3M has paid dividends continuously since 1916.\n- **Consecutive annual increases**: The dividend was raised for 60 consecutive years (as of Q1 2018), 63 consecutive years (as of Q1 2021), and 64 consecutive years (as of Q1 2022).\n- **Growing per-share dividends**: Per-share dividends increased steadily year-over-year, for example:\n  - 2015: $4.10/share (~$2.561B total)\n  - 2016: $4.44/share (~$2.678B total)\n  - 2018: $5.44/share (~$3.193B total)\n  - 2019: $5.76/share (~$3.316B total)\n  - 2020: $5.88/share (~$3.388B total)\n  - 2022 (declared annualized): $5.96/share\n\nThis pattern shows 3M has reliably increased both its total dividend payout and per-share dividend amount every year across the periods covered in these filings, confirming a stable and progressively increasing dividend distribution trend.",
+      "retrieved_docs": [
+        "3M_2017_10K",
+        "3M_2021_10K",
+        "3M_2020_10K",
+        "3M_2015_10K"
+      ],
+      "retrieval_scores": [
+        0.528,
+        0.526,
+        0.52,
+        0.52
+      ],
+      "correct": true,
+      "judge": "CORRECT. Both answers affirm that 3M maintains stable dividend distribution with consecutive annual increases in per-share dividends, though the candidate provides more detailed supporting evidence with specific years and amounts while the reference mentions 65 consecutive years compared to the candidate's 64 years as of 2022."
+    },
+    {
+      "id": "financebench_id_02987",
+      "question": "What is the FY2019 fixed asset turnover ratio for Activision Blizzard? Fixed asset turnover ratio is defined as: FY2019 revenue / (average PP&E between FY2018 and FY2019). Round your answer to two decimal places. Base your judgments on the information provided primarily in the statement of income and the statement of financial position.",
+      "reference": "24.26",
+      "answer": "The filing excerpts provided do not contain the necessary data (net revenue figure, or PP&E balances for FY2018 and FY2019) to calculate the fixed asset turnover ratio.",
+      "retrieved_docs": [
+        "ACTIVISIONBLIZZARD_2019_10K",
+        "ACTIVISIONBLIZZARD_2019_10K",
+        "ACTIVISIONBLIZZARD_2019_10K",
+        "ACTIVISIONBLIZZARD_2019_10K"
+      ],
+      "retrieval_scores": [
+        0.409,
+        0.391,
+        0.389,
+        0.388
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer claims the necessary data is not available, but the reference answer of 24.26 demonstrates that the required figures (FY2019 revenue and PP&E for FY2018-FY2019) were actually present in the provided documents."
+    },
+    {
+      "id": "financebench_id_07966",
+      "question": "What is the FY2017 - FY2019 3 year average of capex as a % of revenue for Activision Blizzard? Answer in units of percents and round to one decimal place. Calculate (or extract) the answer from the statement of income and the cash flow statement.",
+      "reference": "1.9%",
+      "answer": "The filing excerpts provided do not contain capital expenditure or revenue figures needed to calculate this ratio, so I cannot determine the answer from the given information.",
+      "retrieved_docs": [
+        "ACTIVISIONBLIZZARD_2019_10K",
+        "ACTIVISIONBLIZZARD_2018_10K",
+        "ACTIVISIONBLIZZARD_2019_10K",
+        "ACTIVISIONBLIZZARD_2020_10K"
+      ],
+      "retrieval_scores": [
+        0.461,
+        0.43,
+        0.429,
+        0.426
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer claims the necessary data is unavailable, but the reference answer of 1.9% demonstrates that capex and revenue figures for FY2017-FY2019 were sufficient to calculate this metric, indicating the candidate failed to locate or extract the required information."
+    }
+  ]
+}

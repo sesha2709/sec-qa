@@ -1,0 +1,127 @@
+{
+  "score": 0.3333333333333333,
+  "n": 6,
+  "top_k": 4,
+  "results": [
+    {
+      "id": "financebench_id_03029",
+      "question": "What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.",
+      "reference": "$1577.00",
+      "answer": "**$1,577 million** \u2014 3M's purchases of property, plant and equipment (PP&E) for FY2018, as reported in the Cash Flows from Investing Activities section.",
+      "retrieved_docs": [
+        "3M_2018_10K",
+        "3M_2018_10K",
+        "3M_2018_10K",
+        "3M_2017_10K"
+      ],
+      "retrieval_scores": [
+        0.528,
+        0.498,
+        0.492,
+        0.488
+      ],
+      "correct": true,
+      "judge": "CORRECT\nThe candidate answer provides the same numerical value ($1,577 million) and correctly identifies it from the appropriate section of the cash flow statement (investing activities)."
+    },
+    {
+      "id": "financebench_id_04672",
+      "question": "Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.",
+      "reference": "$8.70",
+      "answer": "Based on the excerpts, 3M's total net property, plant and equipment (PP&E) at year-end FY2018 was **$8.738 billion**.",
+      "retrieved_docs": [
+        "3M_2018_10K",
+        "3M_2018_10K",
+        "3M_2018_10K",
+        "3M_2018_10K"
+      ],
+      "retrieval_scores": [
+        0.535,
+        0.533,
+        0.532,
+        0.517
+      ],
+      "correct": true,
+      "judge": "CORRECT\nThe candidate answer of $8.738 billion rounds to $8.70 billion, which matches the reference answer within standard rounding conventions for financial reporting."
+    },
+    {
+      "id": "financebench_id_00499",
+      "question": "Is 3M a capital-intensive business based on FY2022 data?",
+      "reference": "No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:\nCAPEX/Revenue Ratio: 5.1%\nFixed assets/Total Assets: 20%\nReturn on Assets= 12.4%",
+      "answer": "The provided excerpts don't contain the specific financial data (such as capital expenditures, PP&E figures, or capital intensity ratios) needed to answer whether 3M is a capital-intensive business based on FY2022 data. The FY2022 excerpt only discusses cash flow impacts from working capital changes, Combat Arms Earplugs litigation charges, and PFAS-related impairment expenses\u2014it does not provide capital expenditure amounts, total assets, or other metrics that would indicate capital intensity.",
+      "retrieved_docs": [
+        "3M_2016_10K",
+        "3M_2018_10K",
+        "3M_2018_10K",
+        "3M_2022_10K"
+      ],
+      "retrieval_scores": [
+        0.504,
+        0.493,
+        0.487,
+        0.485
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer claims the necessary financial data is not provided, but the reference answer demonstrates that the specific metrics (CAPEX/Revenue Ratio of 5.1%, Fixed Assets/Total Assets of 20%, and ROA of 12.4%) are available from FY2022 data to answer the question."
+    },
+    {
+      "id": "financebench_id_01226",
+      "question": "What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "reference": "Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: \n-Decrease in gross Margin\n-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring\ncharges",
+      "answer": "Based on the filing excerpts provided, I cannot give a complete, specific answer to what drove the operating margin change for FY2022.\n\n**What the excerpts show:**\nThe filings reference a table that was meant to show \"increases (decreases) in operating income margins and diluted earnings per [share]\" but the actual table content and specific drivers/percentages are not included in the excerpts provided.\n\n**Contextual factors mentioned that likely relate to margin impacts in 2022:**\n1. **Russia exit costs** \u2013 In September 2022, management committed to a plan to exit and dispose of net assets through an intended sale of Russia-related subsidiaries, with an associated charge in 2022 (further discussed in Note 15, which covers restructuring/special items).\n2. **Supply chain disruptions** \u2013 3M noted supply disruptions from Russian suppliers affecting certain raw materials, which could have pressured costs/margins.\n3. **PFAS manufacturing exit costs** \u2013 Referenced as a special item excluded from adjusted (non-GAAP) operating income, suggesting this was a drag on GAAP operating margin in 2022.\n4. **Significant litigation costs** \u2013 Also called out as a special item affecting operating income, separate from Corporate and Unallocated allocation.\n5. **Segment reporting changes** \u2013 Effective Q1 2022, 3M changed its measure of segment operating performance and non-GAAP adjustments, which affects comparability of margin figures period-over-period (this is a methodology change, not necessarily a business driver).\n\n**On whether operating margin is a useful metric for 3M:**\nOperating margin *is* a relevant and commonly used metric for a diversified industrial manufacturer like 3M, as it reflects core operating efficiency across its segments. However, the excerpts indicate that in 2022 the GAAP operating margin was significantly affected by one-time/special items (Russia exit, PFAS exit costs, litigation charges), which is why 3M emphasizes **non-GAAP \"adjusted for special items\"** operating income margin as a supplementary measure\u2014to give investors a clearer view of underlying business performance separate from these episodic charges.\n\n**Conclusion:** The excerpts do not contain the specific quantitative table or detailed explanation (e.g., basis-point contributions from volume, price, raw materials, or specific special items) needed to fully answer what drove the FY2022 operating margin change. To answer precisely, the actual MD&A table with itemized drivers (referenced but not shown in these excerpts) would be needed.",
+      "retrieved_docs": [
+        "3M_2022_10K",
+        "3M_2022_10K",
+        "3M_2022_10K",
+        "3M_2023Q2_10Q"
+      ],
+      "retrieval_scores": [
+        0.515,
+        0.512,
+        0.505,
+        0.505
+      ],
+      "correct": false,
+      "judge": "INCORRECT. The candidate answer acknowledges inability to provide specific numbers and drivers due to missing excerpts, while the reference answer provides concrete data (1.7% decrease) and identifies three specific causes (gross margin decrease, Combat Arms litigation, PFAS impairment, Russia exit costs)."
+    },
+    {
+      "id": "financebench_id_01865",
+      "question": "If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",
+      "reference": "The consumer segment shrunk by 0.9% organically.",
+      "answer": "Based on the excerpts provided, the filing information is insufficient to answer this question comprehensively. The excerpts discuss segment-level details for Transportation and Electronics (2023Q2) and Health Care-related divestitures, but they do not provide a complete comparison across all of 3M's segments' organic (M&A-excluded) growth rates for fiscal year 2022 specifically.\n\nThe excerpts do mention that growth in the Health Care-related business (separation and purification and health information systems) was held back by lower post-COVID biopharma demand and hospital budget stress, and that Transportation and Electronics growth was held back by soft electronics end-market demand \u2014 but these references appear to be from the 2023 Q2 filing discussing year-over-year comparisons, not a definitive statement identifying which segment dragged down overall 2022 growth on an organic basis.\n\nTo answer this question accurately, additional excerpts from the 2022 10-K's segment performance discussion (with organic/underlying sales growth broken out by segment, excluding acquisitions/divestitures) would be needed.",
+      "retrieved_docs": [
+        "3M_2023Q2_10Q",
+        "3M_2023Q2_10Q",
+        "3M_2022_10K",
+        "3M_2022_10K"
+      ],
+      "retrieval_scores": [
+        0.609,
+        0.606,
+        0.54,
+        0.529
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe candidate answer declines to provide a specific answer claiming insufficient information, when the reference answer clearly states the consumer segment shrunk by 0.9% organically in 2022."
+    },
+    {
+      "id": "financebench_id_00807",
+      "question": "Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "reference": "No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",
+      "answer": "The filing excerpts provided do not contain the specific balance sheet figures needed to calculate a quick ratio (i.e., cash and cash equivalents, marketable securities, accounts receivable, and current liabilities) for 3M as of Q2 2023.\n\nBased on the available excerpts, I can only note qualitative statements from the filing indicating that:\n- 3M \"maintains a strong liquidity profile\"\n- Its primary short-term liquidity needs are met through cash on hand and U.S. commercial paper issuances\n- The company had $1.8 billion in commercial paper outstanding at June 30, 2023 (compared to none at December 31, 2022), suggesting increased reliance on short-term borrowing\n- 3M believes it will have continuous access to the commercial paper market\n\nHowever, without the actual quick ratio components (current assets excluding inventory, and current liabilities), I cannot calculate or confirm the quick ratio for Q2 FY2023, nor can I definitively assess liquidity health using this specific metric based on the excerpts given.\n\nIf you can provide the balance sheet data (cash, short-term investments, receivables, and current liabilities) from the Q2 2023 10-Q, I can calculate the quick ratio for you.",
+      "retrieved_docs": [
+        "3M_2022_10K",
+        "3M_2021_10K",
+        "3M_2021_10K",
+        "3M_2023Q2_10Q"
+      ],
+      "retrieval_scores": [
+        0.46,
+        0.458,
+        0.453,
+        0.45
+      ],
+      "correct": false,
+      "judge": "INCORRECT\n\nThe reference answer provides a specific quick ratio figure of 0.96 for Q2 2023, which the candidate answer claims cannot be calculated from the available information, making them fundamentally inconsistent on the key factual claim."
+    }
+  ]
+}
